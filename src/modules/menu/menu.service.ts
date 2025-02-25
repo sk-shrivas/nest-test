@@ -17,7 +17,6 @@ export class MenuService {
      const data = await this.prisma.menu.create({
         data: createMenuDto,
       });
-      console.log("data", data)
       return {
         statusCode: 201,
         success: true,
